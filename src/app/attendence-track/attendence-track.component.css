@@ -1,0 +1,163 @@
+
+
+.attendence-heading{
+    margin: 20px 0;
+    font-weight: 700;
+}
+.attendence-parent{
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+#x1,
+#y1 {
+position: absolute;
+font-size: 12px;
+}
+#x1 {
+bottom: -50px;
+left: 100px;
+}
+#y1-25 {
+left: -60px;
+bottom: 110px;
+}
+.y-axis{
+    font-size: 12px;
+}
+.y-axis-parent{
+    margin-top: 15px;
+    margin-left: 23px;
+}
+.x-axis-parent{
+    margin-top: 15px;
+    margin-left: 23px;
+    display: flex;
+    gap: 30px;
+}
+#h1,
+#h3 {
+text-align: center;
+color: green;
+}
+#chart {
+border-bottom: 1px solid #ccc;
+border-left: 1px solid #ccc;
+margin-top: 15px;
+margin-left: 9px;
+height: 220px;
+width: 380px;
+position: relative;
+}
+#point1,
+#point2,
+#point3,
+#point4,
+#point5,
+#point6,
+#point7 {
+border-radius: 50%;
+position: absolute;
+height: 8px;
+width: 8px;
+z-index: 1;
+}
+#point1 {
+background-color: black;
+bottom: 82px;
+left: 30px;
+}
+#point2 {
+background-color: black;
+bottom: 145px;
+left: 76px;
+}
+#point3 {
+background-color: black;
+bottom: 112px;
+left: 116px;
+}
+#point4 {
+background-color: black;
+bottom: 137px;
+left: 164px;
+}
+#point5 {
+background-color: black;
+bottom: 56px;
+left: 212px;
+}
+#point6{
+    bottom: 200px;
+    left: 280px;
+    background-color: black;
+}
+#point7{
+    bottom: 170px;
+    left: 330px;
+    background-color: black;
+}
+#line1,
+#line2,
+#line3,
+#line4,#line5,#line6, #line7 {
+height: 1px;
+position: absolute;
+transform-origin: left bottom;
+width: 56.57px;
+}
+
+#line1 {
+background-color: rgb(150, 83, 150);
+bottom: 92px;
+left: 38px;
+transform: rotate(-52deg);
+width: 73.57px;
+}
+#line2 {
+background-color: rgb(150, 83, 150);
+bottom: 150px;
+left: 80px;
+transform: rotate(40deg);
+width: 53.57px;
+}
+#line3 {
+background-color: rgb(150, 83, 150);
+bottom: 116px;
+left: 124px;
+transform: rotate(-29deg);
+width: 53.57px;
+
+}
+#line4 {
+background-color: rgb(150, 83, 150);
+bottom: 140px;
+left: 170px;
+transform: rotate(59deg);
+width: 88.57px;
+}
+#line5 { 
+    background-color: rgb(150, 83, 150);
+    bottom: 64px;
+    left: 221px;
+    width: 151.57px;
+    transform: rotate(-65deg);
+}
+
+#line6{
+    background-color: rgb(150, 83, 150);
+    bottom: 204px;
+    left: 287px;
+    width: 56.57px;
+    transform: rotate(31deg);
+}
+
+@media screen and (max-width: 500px) {
+    .y-axis-parent{
+        margin-left: 3px;
+    }
+
+    .x-axis-parent{
+        gap: 15px;
+        margin-left: 5px;
+    }
+}

@@ -1,0 +1,75 @@
+.side-nav-parent{
+    padding: 16px;
+}
+
+.course-heading{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.course-details{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.semester-no{
+    font-weight: 700;
+}
+
+.credits-width{
+    width: 63px;
+    display: block
+}
+
+.outcomes-parent, .mapped-parent{
+    gap: 8px;
+}
+
+.outcomes{
+    padding: 4px;
+    background-color: rgb(89, 184, 89) ;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    height: 100%;
+    width: 44px;
+}
+
+.mapped-course{
+    padding: 4px;
+    background-color: rgba(0, 20, 109, 0.89) ;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    height: 100%;
+    width: 44px;
+    color: #fff;
+}
+
+@media screen and (max-width: 800px) {
+            .outcomes-parent, .mapped-parent{
+                flex-wrap: wrap;
+            }
+}
+
+@media screen and (max-width: 600px) {
+    .side-nav-parent{
+        display: flex;
+        flex-direction: column;
+    }
+    .second-par{
+        height: fit-content;
+    }
+    .mobile-view-flex{
+        display: flex;
+        align-items: center;
+    }
+    .mobile-view-flex .mt-2{
+        margin-top: 0 !important;
+        margin-left: 8px;
+    }
+}
