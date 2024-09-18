@@ -27,65 +27,14 @@
           <div class="grid-line"></div>
           <div class="grid-line"></div>
        
-          <!-- John Bars -->
-          <div class="bar-group mr-5">
+          <div *ngFor="let group of barGroups" class="bar-group mr-5">
             <div class="d-flex w-100 h-100 align-items-end">
-    
-                <div class="bar bar-green" style="height: 70%;"></div>
-                <div class="bar bar-green" style="height: 50%;"></div>
-                <div class="bar bar-green" style="height: 60%;"></div>
-                <div class="bar bar-white" style="height: 40%;"></div>
+              <div *ngFor="let bar of group.bars" 
+                   class="bar" 
+                   [ngClass]="{'bar-green': bar.color === 'green', 'bar-white': bar.color === 'white'}" 
+                   [style.height]="bar.height"></div>
             </div>
-            <div class="d-flex justify-content-center x-axis_name">Assignment</div>
-          </div>
-       
-          <!-- Emily Bars -->
-          <div class="bar-group mr-5">
-            <div class="d-flex w-100 h-100 align-items-end">
-    
-                <div class="bar bar-green" style="height: 60%;"></div>
-                <div class=" bar bar-green" style="height: 40%;"></div>
-                <div class="bar bar-white" style="height: 70%;"></div>
-                <div class="bar bar-green" style="height: 50%;"></div>
-                <div class="bar bar-green" style="height: 10%;"></div>
-            </div>
-            <div class="d-flex justify-content-center x-axis_name">Quiz</div>
-    
-          </div>
-       
-          <!-- Michael Bars -->
-          <div class="bar-group">
-            <div class="d-flex w-100 h-100 align-items-end">
-    
-                <div class="bar bar-green" style="height: 80%;"></div>
-                <div class="bar bar-green" style="height: 60%;"></div>
-                <div class="bar bar-green" style="height: 30%;"></div>
-            </div>
-            <div class="d-flex justify-content-center x-axis_name">Presentation</div>
-    
-          </div>
-       
-          <!-- Sara Bars -->
-          <div class="bar-group">
-            <div class="d-flex w-100 h-100 align-items-end">
-    
-                <div class="bar bar-white" style="height: 80%;"></div>
-                <div class="bar bar-green" style="height: 90%;"></div>
-                <div class="bar bar-white" style="height: 20%;"></div>
-                <div class="bar bar-green" style="height: 50%;"></div>
-            </div>
-            <div class="d-flex justify-content-center x-axis_name">Lab</div>
-    
-          </div>
-    
-          <div class="bar-group">
-            <div class="d-flex w-100 h-100 align-items-end">
-    
-                <div class="bar bar-green" style="height: 80%;"></div>
-    
-            </div>
-            <div class="d-flex justify-content-center x-axis_name">Viva</div>
-    
+            <div class="d-flex justify-content-center x-axis_name">{{ group.name }}</div>
           </div>
         </div>
     </div>
